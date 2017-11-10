@@ -1,0 +1,58 @@
+#Question 1_Tutorial 11
+#make this a git hub directory
+mkdir Tut11
+cd Tut11
+git clone https://github.com/davissage/Intro_Biocomp_ND_317_Tutorial11.git
+git pull origin master
+git status
+
+#create this shell script in nano
+nano Tutorial11.txt
+
+#align each of the reference files with muscle
+./muscle3.8.31_i86darwin32 -in transporter.ref -out transporter.align
+./muscle3.8.31_i86darwin32 -in sporecoat.ref -out sporecoat.align
+./muscle3.8.31_i86darwin32 -in sigma.ref -out sigma.align
+ 
+#make HMM profiles from each alignment with hmmbuild
+./hmmer-3.1b2-macosx-intel/binaries/hmmbuild transporter.hmm transporter.align
+./hmmer-3.1b2-macosx-intel/binaries/hmmbuild sporecoat.hmm sporecoat.align
+./hmmer-3.1b2-macosx-intel/binaries/hmmbuild sigma.hmm sigma.align
+
+#loop over all *.fasta
+# run hmmsearch with the --tblout option and use the index variable to specify
+#a unique output file
+#do the hmmsearch 3 times, one per HMM profile
+
+#for transporter
+for filename in *.fasta
+do
+	./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout transporter.hits transporter.hmm $filename
+done
+
+#for sporecoat
+for filename in *.fasta
+do
+        ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm $filename
+done 
+
+#for sigma
+for filename in *.fasta
+do
+	./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm $filename
+done
+
+#cat all of the hmmsearch output files
+# remove the comment lines (grep -v "#")
+# use cut or awk to get the columns you want (1st, 3rd, 5th)
+# trim the 1st column contents to just the last bit that is a "species" code
+cat *.hits | grep -v "#" | awk '{print $1,$3,$5}' | cut -c27-44
+
+
+#git add and git commit to push repository to github
+git add -a
+git status
+git commit -m "shell script and files for tutorial 11 question 1"
+git log
+git pull origin master
+git push origin master
