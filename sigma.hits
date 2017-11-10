@@ -14,5 +14,5 @@ tr|A0A1W9LA94|A0A1W9LA94_9BACT -          sigma                -            5.1e
 # Target file:     Verrucomicrobia.fasta
 # Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Verrucomicrobia.fasta 
 # Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
-# Date:            Fri Nov 10 12:27:12 2017
+# Date:            Fri Nov 10 12:50:10 2017
 # [ok]

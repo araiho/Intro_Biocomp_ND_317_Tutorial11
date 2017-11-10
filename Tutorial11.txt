@@ -28,29 +28,32 @@ nano Tutorial11.txt
 for filename in *.fasta
 do
 	./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout transporter.hits transporter.hmm $filename
+	cat transporter.hits >> transporter.match
 done
 
 #for sporecoat
 for filename in *.fasta
 do
         ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm $filename
+	cat sporecoat.hits >> sporecoat.match
 done 
 
 #for sigma
 for filename in *.fasta
 do
 	./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm $filename
+	cat sigma.hits >> sigma.match
 done
 
 #cat all of the hmmsearch output files
 # remove the comment lines (grep -v "#")
 # use cut or awk to get the columns you want (1st, 3rd, 5th)
 # trim the 1st column contents to just the last bit that is a "species" code
-cat *.hits | grep -v "#" | awk '{print $1,$3,$5}' | cut -c27-44
+cat *.match | grep -v "#" | awk '{print $1,$3,$5}' | cut -c 19-
 
 
 #git add and git commit to push repository to github
-git add -a
+git add -A
 git status
 git commit -m "shell script and files for tutorial 11 question 1"
 git log
