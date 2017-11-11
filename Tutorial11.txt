@@ -49,7 +49,7 @@ done
 # remove the comment lines (grep -v "#")
 # use cut or awk to get the columns you want (1st, 3rd, 5th)
 # trim the 1st column contents to just the last bit that is a "species" code
-cat *.match | grep -v "#" | awk '{print $1,$3,$5}' | cut -c 19-
+cat *.match | grep -v "#" | awk '{print $1,$3,$5}' | sed 's/\|//g' | sed 's/.*_//' | sed 's/9//' > hmmOut.txt
 
 
 #git add and git commit to push repository to github
