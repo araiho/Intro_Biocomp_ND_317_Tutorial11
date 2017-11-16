@@ -1,0 +1,105 @@
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Arthrobacter.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Arthrobacter.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:42 2017
+# [ok]
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A6BZD2|A6CT85_9BACI -          sporecoat            -            5.9e-35  118.6  16.0   6.5e-35  118.5  16.0   1.0   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Bacillus.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Bacillus.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:42 2017
+# [ok]
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Clostridium.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Clostridium.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:42 2017
+# [ok]
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Flavobacterium.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Flavobacterium.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:42 2017
+# [ok]
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Limnohabitans.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Limnohabitans.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:42 2017
+# [ok]
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Rhizobium.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Rhizobium.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:42 2017
+# [ok]
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Roseobacter.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Roseobacter.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:43 2017
+# [ok]
+#                                                               --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name        accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sporecoat.hmm
+# Target file:     Verrucomicrobia.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sporecoat.hits sporecoat.hmm Verrucomicrobia.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:49:43 2017
+# [ok]

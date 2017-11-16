@@ -1,0 +1,203 @@
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                  accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#          ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A0A0P7HFJ4|A0A0P7HFJ4_9MICC -          sigma                -            4.9e-23   78.3   0.3   8.9e-23   77.5   0.3   1.5   1   0   0   1   1   1   1 -
+tr|A0A0P7FPV6|A0A0P7FPV6_9MICC -          sigma                -            4.5e-21   72.0   0.3   6.5e-21   71.5   0.3   1.3   1   0   0   1   1   1   1 -
+tr|A0A0P7GDV0|A0A0P7GDV0_9MICC -          sigma                -            8.1e-16   55.2   0.5   8.1e-16   55.2   0.5   2.2   3   0   0   3   3   3   1 -
+tr|A0A0P7FY19|A0A0P7FY19_9MICC -          sigma                -            3.1e-15   53.3   0.7   5.3e-15   52.6   0.7   1.4   1   0   0   1   1   1   1 -
+tr|A0A0P7HEI0|A0A0P7HEI0_9MICC -          sigma                -            3.3e-14   50.0   1.3   4.5e-14   49.6   0.2   1.8   2   0   0   2   2   2   1 -
+tr|A0A0P7GE65|A0A0P7GE65_9MICC -          sigma                -            4.5e-13   46.4   0.3   1.2e-12   45.0   0.0   1.8   2   0   0   2   2   2   1 -
+tr|A0A0P7HL11|A0A0P7HL11_9MICC -          sigma                -            7.5e-12   42.5   0.5   2.1e-11   41.0   0.5   1.8   1   0   0   1   1   1   1 -
+tr|A0A0P7FHT1|A0A0P7FHT1_9MICC -          sigma                -            2.4e-11   40.8   0.8   6.3e-11   39.5   0.8   1.7   1   0   0   1   1   1   1 -
+tr|A0A0N8HX11|A0A0N8HX11_9MICC -          sigma                -            2.6e-11   40.8   0.5   6.3e-11   39.5   0.5   1.7   1   0   0   1   1   1   1 -
+tr|A0A0P7GAX7|A0A0P7GAX7_9MICC -          sigma                -            9.8e-06   22.9   0.0   1.9e-05   22.0   0.0   1.5   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Arthrobacter.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Arthrobacter.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A6CNQ6|A6CNQ6_9BACI -          sigma                -            1.4e-24   83.6   0.2   2.4e-24   82.9   0.2   1.3   1   0   0   1   1   1   1 -
+tr|A6CSJ0|A6CSJ0_9BACI -          sigma                -            7.6e-23   78.1   0.4   1.2e-22   77.4   0.4   1.3   1   0   0   1   1   1   1 -
+tr|A6CJY3|A6CJY3_9BACI -          sigma                -            5.8e-22   75.3   0.9   8.3e-22   74.8   0.9   1.2   1   0   0   1   1   1   1 -
+tr|A6CU12|A6CU12_9BACI -          sigma                -            3.5e-20   69.6   0.0   5.6e-20   68.9   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CJR5|A6CJR5_9BACI -          sigma                -            4.9e-19   65.9   0.2   7.7e-19   65.3   0.2   1.3   1   0   0   1   1   1   1 -
+tr|A6CHU4|A6CHU4_9BACI -          sigma                -            1.7e-18   64.1   0.0   3.1e-18   63.4   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A6CMX3|A6CMX3_9BACI -          sigma                -            3.4e-18   63.2   0.0   7.2e-18   62.2   0.0   1.5   1   0   0   1   1   1   1 -
+tr|A6CS17|A6CS17_9BACI -          sigma                -            4.5e-18   62.8   0.0   1.1e-17   61.6   0.0   1.7   1   0   0   1   1   1   1 -
+tr|A6CU10|A6CU10_9BACI -          sigma                -            6.7e-18   62.3   0.0   1.6e-17   61.0   0.0   1.7   2   0   0   2   2   2   1 -
+tr|A6CJX5|A6CJX5_9BACI -          sigma                -            3.9e-17   59.8   0.0   6.2e-17   59.2   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CSN9|A6CSN9_9BACI -          sigma                -            1.2e-16   58.3   0.1   2.8e-16   57.1   0.1   1.7   1   0   0   1   1   1   1 -
+tr|A6CTI9|A6CTI9_9BACI -          sigma                -            1.8e-16   57.7   0.0   3.9e-16   56.6   0.0   1.6   1   0   0   1   1   1   1 -
+tr|A6CPD2|A6CPD2_9BACI -          sigma                -            1.8e-16   57.7   0.0   2.9e-16   57.0   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CIS3|A6CIS3_9BACI -          sigma                -            2.4e-16   57.3   0.0   4.3e-16   56.5   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A6CII5|A6CII5_9BACI -          sigma                -            4.2e-16   56.5   0.0   3.3e-15   53.6   0.0   2.0   2   0   0   2   2   2   1 -
+tr|A6CI15|A6CI15_9BACI -          sigma                -            4.9e-16   56.3   0.5   1.3e-15   54.9   0.0   1.9   2   0   0   2   2   2   1 -
+tr|A6CU83|A6CU83_9BACI -          sigma                -            1.2e-15   55.0   0.1   1.9e-15   54.4   0.1   1.3   1   0   0   1   1   1   1 -
+tr|A6CI19|A6CI19_9BACI -          sigma                -            1.2e-14   51.8   0.4   2.2e-14   51.0   0.4   1.4   1   0   0   1   1   1   1 -
+tr|A6CQB8|A6CQB8_9BACI -          sigma                -            3.7e-14   50.3   0.0   6.5e-14   49.5   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A6CK70|A6CK70_9BACI -          sigma                -            3.7e-13   47.1   0.0   7.5e-13   46.1   0.0   1.6   1   0   0   1   1   1   1 -
+tr|A6CIW8|A6CIW8_9BACI -          sigma                -            9.7e-12   42.5   0.0   1.5e-11   41.9   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A6CIF2|A6CIF2_9BACI -          sigma                -            2.7e-11   41.1   0.1   4.9e-11   40.3   0.1   1.4   1   0   0   1   1   1   1 -
+tr|A6CM50|A6CM50_9BACI -          sigma                -            1.6e-09   35.4   0.0   5.7e-09   33.7   0.0   2.0   2   0   0   2   2   2   1 -
+tr|A6CL73|A6CL73_9BACI -          sigma                -            5.8e-09   33.6   0.0   8.3e-09   33.1   0.0   1.3   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Bacillus.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Bacillus.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|R7MFB1|R7MFB1_9CLOT -          sigma                -            1.1e-23   79.7   0.5   2.4e-23   78.5   0.5   1.6   1   0   0   1   1   1   1 -
+tr|R7MJY2|R7MJY2_9CLOT -          sigma                -            1.7e-23   79.0   0.2   3.3e-23   78.1   0.2   1.5   1   0   0   1   1   1   1 -
+tr|R7MGY2|R7MGY2_9CLOT -          sigma                -            6.7e-21   70.7   0.1   1.3e-20   69.8   0.1   1.5   1   0   0   1   1   1   1 -
+tr|R7MFJ3|R7MFJ3_9CLOT -          sigma                -            6.7e-14   48.3   0.0   1.3e-13   47.3   0.0   1.5   1   0   0   1   1   1   1 -
+tr|R7MFY1|R7MFY1_9CLOT -          sigma                -            1.8e-13   46.9   0.0   5.3e-13   45.4   0.0   1.8   2   0   0   2   2   2   1 -
+tr|R7MAD7|R7MAD7_9CLOT -          sigma                -            9.5e-13   44.6   0.0   1.7e-12   43.8   0.0   1.5   1   1   0   1   1   1   1 -
+tr|R7MHN3|R7MHN3_9CLOT -          sigma                -            1.9e-11   40.4   0.1   3.3e-11   39.7   0.1   1.4   1   0   0   1   1   1   1 -
+tr|R7MCS9|R7MCS9_9CLOT -          sigma                -            2.8e-11   39.9   0.0   5.3e-11   39.0   0.0   1.5   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Clostridium.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Clostridium.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                  accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#          ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A0A1S1J8W1|A0A1S1J8W1_9FLAO -          sigma                -              9e-18   61.9   0.0   1.5e-17   61.2   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J0A5|A0A1S1J0A5_9FLAO -          sigma                -            9.4e-18   61.8   0.0   1.5e-17   61.2   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J9H9|A0A1S1J9H9_9FLAO -          sigma                -            1.2e-17   61.4   0.0   3.6e-17   59.9   0.0   1.7   2   0   0   2   2   2   1 -
+tr|A0A1S1JAH2|A0A1S1JAH2_9FLAO -          sigma                -            1.5e-17   61.2   0.2   3.2e-17   60.1   0.1   1.7   2   0   0   2   2   2   1 -
+tr|A0A1S1J7G0|A0A1S1J7G0_9FLAO -          sigma                -              2e-16   57.5   0.2   3.4e-16   56.8   0.2   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J0Z8|A0A1S1J0Z8_9FLAO -          sigma                -              4e-16   56.6   0.1   7.1e-16   55.8   0.1   1.4   1   0   0   1   1   1   1 -
+tr|A0A1S1JF58|A0A1S1JF58_9FLAO -          sigma                -            2.1e-15   54.3   0.1   2.9e-15   53.8   0.1   1.2   1   0   0   1   1   1   1 -
+tr|A0A1S1JAU9|A0A1S1JAU9_9FLAO -          sigma                -            7.6e-15   52.5   0.0   1.2e-14   51.9   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1JAK2|A0A1S1JAK2_9FLAO -          sigma                -            1.6e-13   48.2   0.0   3.3e-13   47.3   0.0   1.5   1   0   0   1   1   1   1 -
+tr|A0A1S1J180|A0A1S1J180_9FLAO -          sigma                -            2.2e-13   47.8   0.0   3.4e-13   47.2   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J4G5|A0A1S1J4G5_9FLAO -          sigma                -            7.7e-13   46.1   0.2   1.4e-12   45.2   0.0   1.5   2   0   0   2   2   1   1 -
+tr|A0A1S1J5F7|A0A1S1J5F7_9FLAO -          sigma                -            9.1e-13   45.8   0.0   1.3e-11   42.1   0.0   2.1   2   0   0   2   2   2   1 -
+tr|A0A1S1J7E0|A0A1S1J7E0_9FLAO -          sigma                -            1.6e-12   45.1   0.0   2.4e-12   44.5   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J430|A0A1S1J430_9FLAO -          sigma                -            9.1e-12   42.6   0.0   1.8e-11   41.7   0.0   1.5   1   0   0   1   1   1   1 -
+tr|A0A1S1J2T6|A0A1S1J2T6_9FLAO -          sigma                -            1.1e-11   42.3   0.0   2.1e-11   41.5   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A0A1S1JDD3|A0A1S1JDD3_9FLAO -          sigma                -            2.2e-10   38.2   0.6   3.2e-10   37.7   0.6   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J6K9|A0A1S1J6K9_9FLAO -          sigma                -            3.2e-10   37.7   0.3   7.9e-10   36.4   0.3   1.7   1   0   0   1   1   1   1 -
+tr|A0A1S1J9G5|A0A1S1J9G5_9FLAO -          sigma                -            7.5e-10   36.5   0.2   7.5e-10   36.5   0.2   1.7   2   0   0   2   2   2   1 -
+tr|A0A1S1J5L5|A0A1S1J5L5_9FLAO -          sigma                -            1.3e-09   35.8   0.0   1.9e-09   35.2   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J6X1|A0A1S1J6X1_9FLAO -          sigma                -            3.7e-08   31.1   0.0   5.1e-08   30.6   0.0   1.2   1   0   0   1   1   1   1 -
+tr|A0A1S1JCL3|A0A1S1JCL3_9FLAO -          sigma                -            5.5e-08   30.5   0.0   8.3e-08   29.9   0.0   1.3   1   0   0   1   1   1   1 -
+tr|A0A1S1J6M2|A0A1S1J6M2_9FLAO -          sigma                -            2.2e-05   22.2   0.0     4e-05   21.3   0.0   1.5   1   0   0   1   1   1   1 -
+tr|A0A1S1J022|A0A1S1J022_9FLAO -          sigma                -            5.2e-05   21.0   0.0   7.8e-05   20.4   0.0   1.4   1   0   0   1   1   1   1 -
+tr|A0A1S1J312|A0A1S1J312_9FLAO -          sigma                -             0.0004   18.1   0.0   0.00071   17.3   0.0   1.4   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Flavobacterium.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Flavobacterium.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                  accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#          ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A0A0P0LD52|A0A0P0LD52_9BURK -          sigma                -            5.8e-22   74.9   0.4   1.2e-21   73.9   0.4   1.6   1   0   0   1   1   1   1 -
+tr|A0A0P0LKP5|A0A0P0LKP5_9BURK -          sigma                -            1.4e-17   60.9   0.0   2.7e-17   59.9   0.0   1.5   1   0   0   1   1   1   1 -
+tr|A0A0P0M8A4|A0A0P0M8A4_9BURK -          sigma                -            6.4e-17   58.7   0.0   1.5e-16   57.5   0.0   1.6   1   0   0   1   1   1   1 -
+tr|A0A0P0MBT4|A0A0P0MBT4_9BURK -          sigma                -            4.8e-14   49.5   1.2   7.1e-14   48.9   1.2   1.3   1   0   0   1   1   1   1 -
+tr|A0A0P0M9M9|A0A0P0M9M9_9BURK -          sigma                -            1.9e-13   47.6   5.5   3.3e-13   46.8   5.5   1.4   1   0   0   1   1   1   1 -
+tr|A0A0P0MA37|A0A0P0MA37_9BURK -          sigma                -            3.6e-13   46.7   0.7   6.1e-13   46.0   0.7   1.3   1   0   0   1   1   1   1 -
+tr|A0A0P0M9Z4|A0A0P0M9Z4_9BURK -          sigma                -            3.2e-05   21.2   0.0   7.4e-05   20.1   0.0   1.7   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Limnohabitans.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Limnohabitans.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                  accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#          ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A0A1Q9ANZ6|A0A1Q9ANZ6_9RHIZ -          sigma                -            6.4e-22   75.3   0.9   1.3e-21   74.3   0.4   1.9   2   0   0   2   2   2   1 -
+tr|A0A1Q9ANQ8|A0A1Q9ANQ8_9RHIZ -          sigma                -            7.4e-22   75.1   6.0   1.4e-21   74.2   6.0   1.5   1   0   0   1   1   1   1 -
+tr|A0A1Q9AL94|A0A1Q9AL94_9RHIZ -          sigma                -            7.1e-19   65.5   2.1   2.1e-18   64.0   0.8   2.2   2   0   0   2   2   2   1 -
+tr|A0A1Q9ALF0|A0A1Q9ALF0_9RHIZ -          sigma                -            1.5e-17   61.3   1.2     2e-17   60.9   0.2   1.8   2   0   0   2   2   2   1 -
+tr|A0A1Q9AF84|A0A1Q9AF84_9RHIZ -          sigma                -            1.6e-17   61.2   0.0   1.4e-16   58.2   0.0   2.4   2   0   0   2   2   2   1 -
+tr|A0A1Q9AII6|A0A1Q9AII6_9RHIZ -          sigma                -              5e-17   59.6   0.6     5e-17   59.6   0.6   1.6   2   0   0   2   2   2   1 -
+tr|A0A1Q9ACE9|A0A1Q9ACE9_9RHIZ -          sigma                -            3.4e-16   56.9   0.3   6.7e-16   56.0   0.3   1.5   1   0   0   1   1   1   1 -
+tr|A0A1Q9AIU3|A0A1Q9AIU3_9RHIZ -          sigma                -            7.9e-16   55.8   0.1   1.2e-15   55.2   0.1   1.3   1   0   0   1   1   1   1 -
+tr|A0A1Q9AEH2|A0A1Q9AEH2_9RHIZ -          sigma                -            2.6e-15   54.1   0.7   5.8e-15   53.0   0.2   1.9   2   0   0   2   2   2   1 -
+tr|A0A1Q9ANU6|A0A1Q9ANU6_9RHIZ -          sigma                -            1.9e-12   44.9   0.7   3.3e-12   44.1   0.7   1.4   1   0   0   1   1   1   1 -
+tr|A0A1Q9AQ99|A0A1Q9AQ99_9RHIZ -          sigma                -            5.5e-12   43.5   4.5   8.9e-12   42.8   3.5   1.8   2   0   0   2   2   2   1 -
+tr|A0A1Q9AQ73|A0A1Q9AQ73_9RHIZ -          sigma                -            5.5e-12   43.4   1.3     1e-11   42.6   0.2   2.0   2   0   0   2   2   2   1 -
+tr|A0A1Q9ADJ9|A0A1Q9ADJ9_9RHIZ -          sigma                -            1.7e-08   32.2   0.6   4.2e-08   31.0   0.6   1.7   1   0   0   1   1   1   1 -
+tr|A0A1Q9APD8|A0A1Q9APD8_9RHIZ -          sigma                -            4.5e-06   24.5   0.6   9.3e-06   23.5   0.2   1.7   2   0   0   2   2   2   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Rhizobium.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Rhizobium.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                 --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name          accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#  ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|B7RH33|B7RH33_9RHOB -          sigma                -            5.4e-22   75.3   0.4   1.1e-21   74.3   0.4   1.6   1   0   0   1   1   1   1 -
+tr|B7RGX5|B7RGX5_9RHOB -          sigma                -            1.2e-18   64.7   0.1   2.5e-18   63.6   0.1   1.6   1   0   0   1   1   1   1 -
+tr|B7RH17|B7RH17_9RHOB -          sigma                -            2.2e-18   63.8   0.2   5.2e-18   62.6   0.2   1.7   1   0   0   1   1   1   1 -
+tr|B7RI57|B7RI57_9RHOB -          sigma                -            4.7e-18   62.7   0.4   1.8e-17   60.9   0.1   2.0   2   0   0   2   2   2   1 -
+tr|B7RJL9|B7RJL9_9RHOB -          sigma                -            4.8e-18   62.7   0.2   8.3e-18   61.9   0.2   1.4   1   0   0   1   1   1   1 -
+tr|B7RH51|B7RH51_9RHOB -          sigma                -            3.7e-16   56.6   0.1   7.4e-16   55.7   0.1   1.5   1   0   0   1   1   1   1 -
+tr|B7RSA6|B7RSA6_9RHOB -          sigma                -            7.6e-14   49.2   0.4   1.4e-13   48.4   0.4   1.4   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Roseobacter.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Roseobacter.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:09 2017
+# [ok]
+#                                                                         --- full sequence ---- --- best 1 domain ---- --- domain number estimation ----
+# target name                  accession  query name           accession    E-value  score  bias   E-value  score  bias   exp reg clu  ov env dom rep inc description of target
+#          ------------------- ---------- -------------------- ---------- --------- ------ ----- --------- ------ -----   --- --- --- --- --- --- --- --- ---------------------
+tr|A0A1W9LF71|A0A1W9LF71_9BACT -          sigma                -            2.8e-22   75.1   0.2   6.6e-22   73.9   0.2   1.7   1   0   0   1   1   1   1 -
+tr|A0A1W9LBX6|A0A1W9LBX6_9BACT -          sigma                -            3.5e-20   68.4   4.7   7.6e-20   67.3   4.7   1.6   1   0   0   1   1   1   1 -
+tr|A0A1W9LH48|A0A1W9LH48_9BACT -          sigma                -            5.6e-18   61.3   3.4   9.7e-18   60.5   3.4   1.4   1   0   0   1   1   1   1 -
+tr|A0A1W9LHW5|A0A1W9LHW5_9BACT -          sigma                -            2.1e-14   49.8   2.8   3.8e-14   49.0   2.8   1.4   1   0   0   1   1   1   1 -
+tr|A0A1W9LA94|A0A1W9LA94_9BACT -          sigma                -            5.1e-14   48.6   2.2   1.3e-13   47.3   2.2   1.7   1   0   0   1   1   1   1 -
+#
+# Program:         hmmsearch
+# Version:         3.1b2 (February 2015)
+# Pipeline mode:   SEARCH
+# Query file:      sigma.hmm
+# Target file:     Verrucomicrobia.fasta
+# Option settings: ./hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout sigma.hits sigma.hmm Verrucomicrobia.fasta 
+# Current dir:     /Users/avendrely/Desktop/Biocomputing/Tut11/Intro_Biocomp_ND_317_Tutorial11
+# Date:            Fri Nov 10 12:50:10 2017
+# [ok]
