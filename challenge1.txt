@@ -53,7 +53,6 @@ $ ./hmmbuild sporecoat.hmm sporecoat.align
 # remove the comment lines (grep -v "#")
 # use cut or awk to get the columns you want (1st, 3rd, 5th)
 
-
 cat Vsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
 cat Rhsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
 cat Rosporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
@@ -62,6 +61,26 @@ cat Fsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
 cat Csporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
 cat Bsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
 cat Asporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+
+cat Vtransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Rhtransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Rotransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Ltransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Ftransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Ctransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Btransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Atransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+
+cat Vsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Rhsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Rosigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Lsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Fsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Csigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Bsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Asigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+
+
 
 
 # trim the 1st column contents to just the last bit that is a "species" code
