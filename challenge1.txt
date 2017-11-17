@@ -1,0 +1,89 @@
+# Problem 1:
+#   
+# align each of the reference files with muscle into .align file
+#NOTE:all the files must be in the same place for convenience or else need to specify
+#the path to each file. Here all my files are in the current working directory
+
+$ ./muscle3.8.31_i86win32.exe -in sigma.ref -out sigma.align
+$ ./muscle3.8.31_i86win32.exe -in sporecoat.ref -out sporecoat.align
+$ ./muscle3.8.31_i86win32.exe -in transporter.ref -out transporter.align
+
+# make HMM profiles from each alignment with hmmbuild
+$ ./hmmbuild transporter.hmm transporter.align
+$ ./hmmbuild sigma.hmm sigma.align
+$ ./hmmbuild sporecoat.hmm sporecoat.align
+
+
+# 
+# run hmmsearch with the --tblout option and use the 
+# index variable to specify a unique output file
+# do the hmmsearch step 3 times, one per HMM profile
+
+./hmmsearch --tblout Rosigma.hits sigma.hmm Roseobacter.fasta
+./hmmsearch --tblout Rosporecoat.hits sporecoat.hmm Roseobacter.fasta
+./hmmsearch --tblout Rotransporter.hits transporter.hmm Roseobacter.fasta
+
+./hmmsearch --tblout Rhsigma.hits sigma.hmm Rhizobium.fasta
+./hmmsearch --tblout Rhsporecoat.hits sporecoat.hmm Rhizobium.fasta 
+./hmmsearch --tblout Rhtransporter.hits transporter.hmm Rhizobium.fasta
+
+./hmmsearch --tblout Lsigma.hits sigma.hmm Limnohabitans.fasta
+./hmmsearch --tblout Lsporecoat.hits sporecoat.hmm Limnohabitans.fasta
+./hmmsearch --tblout Ltransporter.hits transporter.hmm Limnohabitans.fasta
+
+./hmmsearch --tblout Csigma.hits sigma.hmm Clostridium.fasta
+./hmmsearch --tblout Csporecoat.hits sporecoat.hmm Clostridium.fasta
+./hmmsearch --tblout Ctransporter.hits transporter.hmm Clostridium.fasta
+
+./hmmsearch --tblout Bsigma.hits sigma.hmm Bacillus.fasta
+./hmmsearch --tblout Bsporecoat.hits sporecoat.hmm Bacillus.fasta
+./hmmsearch --tblout Btransporter.hits transporter.hmm Bacillus.fasta
+
+./hmmsearch --tblout Asigma.hits sigma.hmm Arthrobacter.fasta
+./hmmsearch --tblout Asporecoat.hits sporecoat.hmm Arthrobacter.fasta
+./hmmsearch --tblout Atransporter.hits transporter.hmm Arthrobacter.fasta
+
+./hmmsearch --tblout Vsigma.hits sigma.hmm Verrucomicrobia.fasta
+./hmmsearch --tblout Vsporecoat.hits sporecoat.hmm Verrucomicrobia.fasta
+./hmmsearch --tblout Vtransporter.hits transporter.hmm Verrucomicrobia.fasta
+
+
+# 
+# cat all of the hmmsearch output files
+# remove the comment lines (grep -v "#")
+# use cut or awk to get the columns you want (1st, 3rd, 5th)
+
+cat Vsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Rhsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Rosporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Lsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Fsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Csporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Bsporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+cat Asporecoat.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sporecoat.table
+
+cat Vtransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Rhtransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Rotransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Ltransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Ftransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Ctransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Btransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+cat Atransporter.hits | grep -v "#" | awk '{print $1,$3,$5}' >> transporter.table
+
+cat Vsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Rhsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Rosigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Lsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Fsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Csigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Bsigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+cat Asigma.hits | grep -v "#" | awk '{print $1,$3,$5}' >> sigma.table
+
+
+
+
+# trim the 1st column contents to just the last bit that is a "species" code
+cat transporter.table | awk '{print substr($1,length($1)-3,4),$2,$3}' >> hmmOut
+cat sporecoat.table | sed 's/tr|A6BZD2|A6CT85_9BACI/BACI/g' >> hmmOut
+cat sigma.table | awk '{print substr($1,length($1)-3,4),$2,$3}' >> hmmout
