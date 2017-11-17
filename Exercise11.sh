@@ -135,6 +135,14 @@ cat All_Sigma_Results.txt >> ALL_Results.txt
 cat All_Transporter_Results.txt >> ALL_Results.txt
 cat All_Sporecoat_Results.txt >> ALL_Results.txt
 
+#Remove comments and put into a new file called ALL1.txt
+grep -v '[#]' ALL_Results.txt>ALL1.txt
+
+#Cut out rows 1, 3, and 5 and put into a new file called ALL2.txt
+awk '{print $1,$3,$5}' ALL1.txt > ALL2.txt 
+
+#Trim first colmun contents and put into new file called FinalResults.txt
+sed -e 's/\<[tr]\.[A-Z0-9]+\.[A-Z0-9]+\.[9]\>//g' ALL2.txt>FinalResults.txt
 
 
 
