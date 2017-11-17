@@ -1,0 +1,43 @@
+
+## Problem 2 ##
+
+#Load Libraries
+
+library(regexr)
+
+#Reading data into an object
+
+readData=scan(file="motifsort.fasta", what = "charecter")
+
+#Convert object to a vector
+vectorData=data.frame(readData)
+
+#Create output files
+
+file.create("motif1")
+file.create("motif2")
+file.create("unknown")
+
+#for loop filtering out sequence desgination lines
+for (i in vectorData[,1]){
+  
+}
+#for loop to search for motifs and sort
+for(i in data[,1]){
+  if(grepl("AKKPRVZE", data[i,1])){
+    
+    write(data[i,1], file = "motif1", append = TRUE)
+  } else {if (grepl("AAQWWRNYGG", data[i,1])){
+    
+    write(data[i,1], file = "motif2", append = TRUE)
+} else { if (!grepl("sequence", data[i,1])){
+  
+  write(data[i,1], file = "unknown", append = TRUE)
+}}
+  }}
+
+
+#attempts to add the sequence number in front of the sequences sorted into the different motif files (these are removed from the if loop to try and troubleshoot)
+write(data[(i-1),1], file = "motif1", append= TRUE)
+write(data[(i-1),1], file = "motif2", append= TRUE)    
+write(data[(i-1),1], file = "unknown", append= TRUE)    
