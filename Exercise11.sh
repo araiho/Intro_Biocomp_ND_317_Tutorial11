@@ -142,7 +142,7 @@ grep -v '[#]' ALL_Results.txt>ALL1.txt
 awk '{print $1,$3,$5}' ALL1.txt > ALL2.txt 
 
 #Trim first colmun contents and put into new file called FinalResults.txt
-sed -e 's/\<[tr]\.[A-Z0-9]+\.[A-Z0-9]+\.[9]\>//g' ALL2.txt>FinalResults.txt
+sed -E 's/tr\|[A-Z0-9]+\|[A-Z0-9]+_9//g' ALL2.txt >> FinalResults.txt
 
 
 
