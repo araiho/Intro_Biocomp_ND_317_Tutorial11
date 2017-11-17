@@ -1,3 +1,144 @@
+####QUESTION1####
+
+
+###Align reference sequence files using muscle either format below is okay! Repeat alignment for all files.
+
+#Sigma
+/Users/lou/Desktop/muscle3.8.31_i86darwin64 -in sigma.ref -out sigma.align
+
+#transporter reference
+/Users/lou/Desktop/muscle3.8.31_i86darwin64 -in transporter.ref -out transporter.align
+
+#sporecoat
+/Users/lou/Desktop/muscle3.8.31_i86darwin64 -in sporecoat.ref -out sporecoat.align
+
+
+###Build a profile HMM using alignment sequences and hmmbuild.
+
+#Sigma
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmbuild sigma.hmm sigma.align
+
+#transporter reference
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmbuild transporter.hmm transporter.align
+
+#sporecoat
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmbuild sporecoat.hmm sporecoat.align
+
+
+###Search each proteome for sigma factors using hmmsearch.
+
+#Arthrobacter
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Arthrobacter.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Bacillus
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Bacillus.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Clostridium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout cat Results.txt sigma.hmm Clostridium.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Flavobacterium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Flavobacterium.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Limnohabitans
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Limnohabitans.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Rhizobium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Rhizobium.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Roseobacter
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Roseobacter.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+#Verrucomicrobia
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sigma.hmm Verrucomicrobia.fasta
+cat Results.txt >> All_Sigma_Results.txt
+
+
+###Search each proteome for transporter using hmmsearch.
+
+#Arthrobacter
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt transporter.hmm Arthrobacter.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+#Bacillus
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Bacillus.txt transporter.hmm Bacillus.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+#Clostridium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt transporter.hmm Clostridium.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+#Flavobacterium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt transporter.hmm Flavobacterium.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+#Limnohabitans
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Limnohabitans.txt transporter.hmm Limnohabitans.fasta
+cat Results.txt >> All_Transporter_Results.txt
+ 
+#Rhizobium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt transporter.hmm Rhizobium.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+#Roseobacter
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt transporter.hmm Roseobacter.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+#Verrucomicrobia
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt transporter.hmm Verrucomicrobia.fasta
+cat Results.txt >> All_Transporter_Results.txt
+
+
+###Search each proteome for sporecoat using hmmsearch.
+
+#Arthrobacter
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Arthrobacter.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Bacillus
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Bacillus.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Clostridium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Clostridium.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Flavobacterium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Flavobacterium.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Limnohabitans
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Limnohabitans.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Rhizobium
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Rhizobium.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Roseobacter
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Roseobacter.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+#Verrucomicrobia
+/Users/lou/Desktop/hmmer-3.1b2-macosx-intel/binaries/hmmsearch --tblout Results.txt sporecoat.hmm Verrucomicrobia.fasta
+cat Results.txt >> All_Sporecoat_Results.txt
+
+
+#Combine the three results files in one file called ALL_Results.txt
+cat All_Sigma_Results.txt >> ALL_Results.txt
+cat All_Transporter_Results.txt >> ALL_Results.txt
+cat All_Sporecoat_Results.txt >> ALL_Results.txt
+
+
+
+
+
 ## Problem 2
 
 # Set working Directory
